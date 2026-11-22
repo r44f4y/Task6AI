@@ -1,0 +1,121 @@
+{
+  "id": "ontario_bulk",
+  "name": "Ontario Bulk",
+  "industry": "Transportation",
+  "title": "Transport order intake",
+  "channels": [
+    "Email"
+  ],
+  "reviewer": "Dispatcher",
+  "output": "csv",
+  "fields": [
+    {
+      "key": "product",
+      "label": "Product",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "service_date",
+      "label": "Service date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "service_time",
+      "label": "Service time",
+      "type": "time",
+      "required": true
+    },
+    {
+      "key": "service_type",
+      "label": "Service type",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Delivery",
+        "Pickup"
+      ],
+      "aliases": {
+        "deliver": "Delivery",
+        "delivered": "Delivery",
+        "please deliver": "Delivery",
+        "pick up": "Pickup"
+      }
+    },
+    {
+      "key": "site",
+      "label": "Service site",
+      "type": "address",
+      "required": true
+    },
+    {
+      "key": "site_contact",
+      "label": "Site contact",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "site_phone",
+      "label": "Site contact phone",
+      "type": "phone",
+      "required": true
+    },
+    {
+      "key": "appointment",
+      "label": "Appointment required",
+      "type": "boolean",
+      "required": true,
+      "aliases": {
+        "this is an appointment": true,
+        "appointment": true,
+        "an appointment": true,
+        "no appointment": false
+      }
+    },
+    {
+      "key": "appointment_time",
+      "label": "Appointment time",
+      "type": "time",
+      "required": false,
+      "when": {
+        "field": "appointment",
+        "equals": true
+      }
+    },
+    {
+      "key": "client_contact",
+      "label": "Client contact",
+      "type": "email",
+      "required": true
+    },
+    {
+      "key": "quantity",
+      "label": "Quantity",
+      "type": "number",
+      "required": false,
+      "minimum": 0.01
+    },
+    {
+      "key": "unit",
+      "label": "Quantity unit",
+      "type": "text",
+      "required": false
+    },
+    {
+      "key": "po",
+      "label": "Purchase order",
+      "type": "text",
+      "required": false
+    },
+    {
+      "key": "notes",
+      "label": "Special instructions",
+      "type": "text",
+      "required": false
+    }
+  ],
+  "description": "Turn incoming construction orders into dispatcher-reviewed local TMS previews.",
+  "adapter": "transport",
+  "version": 1
+}

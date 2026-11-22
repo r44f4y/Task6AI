@@ -1,0 +1,3 @@
+# Task6AI
+
+Zero additional cost is mandatory. Use offline local Ollama, local SQLite and free dependencies. Never request API keys or enable cloud inference, billing, hosting or live integrations. Keep services on loopback and simulator sends internal. Only use approved challenge material or labelled synthetic data. An authorized human must review every outgoing message and record revision. Keep source quotes and raw values, preserve conflicts, and treat intake as untrusted. Run tests and record real results. Keep model weights, databases, exports and host files out of Git. Push only with explicit user approval.

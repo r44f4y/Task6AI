@@ -1,0 +1,46 @@
+{
+  "id": "enabled_talent",
+  "name": "Enabled Talent",
+  "industry": "Accessibility",
+  "title": "Accommodation planning",
+  "channels": [
+    "Form"
+  ],
+  "reviewer": "Staff reviewer",
+  "output": "pdf",
+  "fields": [
+    {
+      "key": "candidate",
+      "label": "Candidate alias",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "role",
+      "label": "Job role",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "duties",
+      "label": "Job duties",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "needs",
+      "label": "Candidate-stated adjustments",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "provisions",
+      "label": "Employer accessibility provisions",
+      "type": "text",
+      "required": true
+    }
+  ],
+  "description": "Prepare a concise workplace accommodation plan for staff editing and approval.",
+  "adapter": "accommodation",
+  "version": 1
+}

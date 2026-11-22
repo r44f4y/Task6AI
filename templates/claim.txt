@@ -1,0 +1,10 @@
+ILLUSTRATIVE DRAFT | LAWYER REVIEW
+Statement of Claim
+
+Proposed claimant: {lender}
+Proposed defendant: {borrower}
+Property: {property}
+Mortgage registration: {registration}
+Ledger as of {as_of}: CAD {total}
+
+Draft factual summary for counsel. Counsel must review standing, pleadings and relief before any use.

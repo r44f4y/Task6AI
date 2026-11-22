@@ -1,0 +1,3 @@
+# Relay AI
+
+Relay AI demonstrates Challenge 6 using one versioned workflow engine. Each workflow turns simulated intake into evidence-backed facts, identifies unresolved information, prepares a local draft and waits for a human decision. Ontario Bulk is the primary demo. The other cards cover flyer printing, illustrative mortgage enforcement and workplace accommodations. All services run locally at zero additional cost. The supplied briefs establish the expected outcomes. Host-specific forms, price sheets, precedents and sandbox schemas require separate access, so the demo uses labelled synthetic equivalents.

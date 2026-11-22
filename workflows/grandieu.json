@@ -1,0 +1,119 @@
+{
+  "id": "grandieu",
+  "name": "Studio by Grandieu",
+  "industry": "Printing and design",
+  "title": "Flyer printing intake",
+  "channels": [
+    "WhatsApp"
+  ],
+  "reviewer": "Owner",
+  "output": "xlsx",
+  "fields": [
+    {
+      "key": "customer",
+      "label": "Customer",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "service",
+      "label": "Requested service",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Flyer printing"
+      ]
+    },
+    {
+      "key": "quantity",
+      "label": "Flyer quantity",
+      "type": "number",
+      "required": true,
+      "minimum": 1,
+      "maximum": 10000,
+      "integer": true
+    },
+    {
+      "key": "size",
+      "label": "Flyer size",
+      "type": "select",
+      "required": true,
+      "options": [
+        "A5",
+        "A6"
+      ]
+    },
+    {
+      "key": "colour",
+      "label": "Print colour",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Full colour",
+        "Black and white"
+      ]
+    },
+    {
+      "key": "sides",
+      "label": "Sides",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Single-sided",
+        "Double-sided"
+      ]
+    },
+    {
+      "key": "design",
+      "label": "Design file",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "format",
+      "label": "File format",
+      "type": "select",
+      "required": true,
+      "options": [
+        "PDF",
+        "PNG"
+      ]
+    },
+    {
+      "key": "design_width",
+      "label": "Design width in mm",
+      "type": "number",
+      "required": true,
+      "minimum": 1
+    },
+    {
+      "key": "design_height",
+      "label": "Design height in mm",
+      "type": "number",
+      "required": true,
+      "minimum": 1
+    },
+    {
+      "key": "resolution",
+      "label": "Design resolution in DPI",
+      "type": "number",
+      "required": true,
+      "minimum": 300
+    },
+    {
+      "key": "due",
+      "label": "Completion date",
+      "type": "date",
+      "required": true
+    }
+  ],
+  "description": "Answer flyer inquiries and prepare an order sheet and proposed pricing for owner review.",
+  "adapter": "print",
+  "version": 1,
+  "prices": {
+    "A5": "0.35",
+    "A6": "0.25",
+    "double_sided": "0.10",
+    "black_and_white_discount": "0.05"
+  }
+}

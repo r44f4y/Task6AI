@@ -1,0 +1,224 @@
+[
+  {
+    "id": "fbw_law-001",
+    "org": "fbw_law",
+    "title": "Complete mortgage file",
+    "sender": "demo-fbw-law@example.com",
+    "channel": "File",
+    "body": "Fictional mortgage file. Please review the attached specimens.\n\nThanks for checking.\n",
+    "thread": "fbw_law-001",
+    "message_id": "fbw_law-001@example.com",
+    "timestamp": "2026-11-21T14:01:00Z",
+    "expected": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 1",
+      "property": "221 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 1 PLAN DEMO-MT",
+      "pin": "DEMO-00001",
+      "registration": "DEMO-MORT-001",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "payment_history": "Demo ledger confirms no payments during calculation period",
+      "fees": "125.00",
+      "method": "Simple ACT/365"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 1",
+      "property": "221 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 1 PLAN DEMO-MT",
+      "pin": "DEMO-00001",
+      "registration": "DEMO-MORT-001",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "payment_history": "Demo ledger confirms no payments during calculation period",
+      "fees": "125.00",
+      "method": "Simple ACT/365"
+    },
+    "attachments": [
+      {
+        "name": "registered-mortgage.pdf",
+        "kind": "pdf",
+        "text": "Registered lender: Example Credit Trust\nBorrower: Fictional Borrower 1\nMortgage registration: DEMO-MORT-001\nRegistration date: 2021-06-01\nRegistered principal: 250000.00\nAnnual interest rate percent: 5.25\nCalculation method: Simple ACT/365"
+      },
+      {
+        "name": "title-search.pdf",
+        "kind": "pdf",
+        "text": "Property address: 221 Sample Title Road, Exampleton, ON\nLegal description: LOT 1 PLAN DEMO-MT\nProperty identification number: DEMO-00001"
+      },
+      {
+        "name": "ledger.txt",
+        "kind": "txt",
+        "text": "Outstanding principal: 174500.00\nDefault date: 2026-08-15\nCalculation date: 2026-11-21\nVerified fees: 125.00\nPayment history: Demo ledger confirms no payments during calculation period"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "fbw_law-002",
+    "org": "fbw_law",
+    "title": "Payment history unavailable",
+    "sender": "demo-fbw-law@example.com",
+    "channel": "File",
+    "body": "Fictional mortgage file. Please review the attached specimens.\n\nThanks for checking.\n",
+    "thread": "fbw_law-002",
+    "message_id": "fbw_law-002@example.com",
+    "timestamp": "2026-11-21T14:02:00Z",
+    "expected": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 2",
+      "property": "222 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 2 PLAN DEMO-MT",
+      "pin": "DEMO-00002",
+      "registration": "DEMO-MORT-002",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "fees": "125.00",
+      "method": "Simple ACT/365"
+    },
+    "missing": [
+      "payment_history"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide payment history."
+    ],
+    "replies": [],
+    "final": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 2",
+      "property": "222 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 2 PLAN DEMO-MT",
+      "pin": "DEMO-00002",
+      "registration": "DEMO-MORT-002",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "payment_history": "Demo ledger confirms no payments during calculation period",
+      "fees": "125.00",
+      "method": "Simple ACT/365"
+    },
+    "attachments": [
+      {
+        "name": "registered-mortgage.pdf",
+        "kind": "pdf",
+        "text": "Registered lender: Example Credit Trust\nBorrower: Fictional Borrower 2\nMortgage registration: DEMO-MORT-002\nRegistration date: 2021-06-01\nRegistered principal: 250000.00\nAnnual interest rate percent: 5.25\nCalculation method: Simple ACT/365"
+      },
+      {
+        "name": "title-search.pdf",
+        "kind": "pdf",
+        "text": "Property address: 222 Sample Title Road, Exampleton, ON\nLegal description: LOT 2 PLAN DEMO-MT\nProperty identification number: DEMO-00002"
+      },
+      {
+        "name": "ledger.txt",
+        "kind": "txt",
+        "text": "Outstanding principal: 174500.00\nDefault date: 2026-08-15\nCalculation date: 2026-11-21\nVerified fees: 125.00"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "fbw_law-003",
+    "org": "fbw_law",
+    "title": "Transferred mortgage",
+    "sender": "demo-fbw-law@example.com",
+    "channel": "File",
+    "body": "Fictional mortgage file. Please review the attached specimens.\n\nThanks for checking.\n",
+    "thread": "fbw_law-003",
+    "message_id": "fbw_law-003@example.com",
+    "timestamp": "2026-11-21T14:03:00Z",
+    "expected": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 3",
+      "property": "223 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 3 PLAN DEMO-MT",
+      "pin": "DEMO-00003",
+      "registration": "DEMO-MORT-003",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "payment_history": "Demo ledger confirms no payments during calculation period",
+      "fees": "125.00",
+      "method": "Simple ACT/365",
+      "transferred_lender": "Fictional Transfer Trust",
+      "transfer_date": "2024-05-02"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "lender": "Example Credit Trust",
+      "borrower": "Fictional Borrower 3",
+      "property": "223 Sample Title Road, Exampleton, ON",
+      "legal_description": "LOT 3 PLAN DEMO-MT",
+      "pin": "DEMO-00003",
+      "registration": "DEMO-MORT-003",
+      "registration_date": "2021-06-01",
+      "original_principal": "250000.00",
+      "principal": "174500.00",
+      "rate": "5.25",
+      "default_date": "2026-08-15",
+      "as_of": "2026-11-21",
+      "payment_history": "Demo ledger confirms no payments during calculation period",
+      "fees": "125.00",
+      "method": "Simple ACT/365",
+      "transferred_lender": "Fictional Transfer Trust",
+      "transfer_date": "2024-05-02"
+    },
+    "attachments": [
+      {
+        "name": "registered-mortgage.pdf",
+        "kind": "pdf",
+        "text": "Registered lender: Example Credit Trust\nBorrower: Fictional Borrower 3\nMortgage registration: DEMO-MORT-003\nRegistration date: 2021-06-01\nRegistered principal: 250000.00\nAnnual interest rate percent: 5.25\nCalculation method: Simple ACT/365"
+      },
+      {
+        "name": "title-search.pdf",
+        "kind": "pdf",
+        "text": "Property address: 223 Sample Title Road, Exampleton, ON\nLegal description: LOT 3 PLAN DEMO-MT\nProperty identification number: DEMO-00003"
+      },
+      {
+        "name": "ledger.txt",
+        "kind": "txt",
+        "text": "Outstanding principal: 174500.00\nDefault date: 2026-08-15\nCalculation date: 2026-11-21\nVerified fees: 125.00\nPayment history: Demo ledger confirms no payments during calculation period"
+      },
+      {
+        "name": "transfer-of-charge.txt",
+        "kind": "txt",
+        "text": "Transferred lender: Fictional Transfer Trust\nTransfer date: 2024-05-02"
+      }
+    ],
+    "reply_attachments": {}
+  }
+]

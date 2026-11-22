@@ -1,0 +1,56 @@
+{
+  "id": "harbor_repair",
+  "name": "Harbour Repair Co.",
+  "industry": "Equipment maintenance",
+  "title": "Repair service intake",
+  "channels": [
+    "Email"
+  ],
+  "reviewer": "Service coordinator",
+  "output": "json",
+  "fields": [
+    {
+      "key": "asset",
+      "label": "Equipment ID",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "fault",
+      "label": "Reported fault",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "requested_date",
+      "label": "Requested service date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "contact",
+      "label": "Contact email",
+      "type": "email",
+      "required": true
+    },
+    {
+      "key": "on_site",
+      "label": "On-site visit",
+      "type": "boolean",
+      "required": true
+    },
+    {
+      "key": "location",
+      "label": "Visit address",
+      "type": "address",
+      "required": false,
+      "when": {
+        "field": "on_site",
+        "equals": true
+      }
+    }
+  ],
+  "description": "A fifth organisation configured entirely through standard workflow fields.",
+  "adapter": null,
+  "version": 1
+}

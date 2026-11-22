@@ -1,0 +1,12 @@
+.venv/
+.local/
+.env
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+*.sqlite*
+exports/
+test-results/
+playwright-report/
+.DS_Store

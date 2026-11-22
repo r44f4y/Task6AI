@@ -1,0 +1,126 @@
+{
+  "id": "fbw_law",
+  "name": "Freedman Benipal Wu LLP",
+  "industry": "Legal services",
+  "title": "Mortgage enforcement intake",
+  "channels": [
+    "File"
+  ],
+  "reviewer": "Lawyer",
+  "output": "zip",
+  "fields": [
+    {
+      "key": "lender",
+      "label": "Registered lender",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "transferred_lender",
+      "label": "Transferred lender",
+      "type": "text",
+      "required": false
+    },
+    {
+      "key": "transfer_date",
+      "label": "Transfer date",
+      "type": "date",
+      "required": false
+    },
+    {
+      "key": "borrower",
+      "label": "Borrower",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "property",
+      "label": "Property address",
+      "type": "address",
+      "required": true
+    },
+    {
+      "key": "legal_description",
+      "label": "Legal description",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "pin",
+      "label": "Property identification number",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "registration",
+      "label": "Mortgage registration",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "registration_date",
+      "label": "Registration date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "original_principal",
+      "label": "Registered principal",
+      "type": "currency",
+      "required": true,
+      "minimum": 0
+    },
+    {
+      "key": "principal",
+      "label": "Outstanding principal",
+      "type": "currency",
+      "required": true,
+      "minimum": 0
+    },
+    {
+      "key": "rate",
+      "label": "Annual interest rate percent",
+      "type": "number",
+      "required": true,
+      "minimum": 0,
+      "maximum": 100
+    },
+    {
+      "key": "default_date",
+      "label": "Default date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "as_of",
+      "label": "Calculation date",
+      "type": "date",
+      "required": true
+    },
+    {
+      "key": "payment_history",
+      "label": "Payment history",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "fees",
+      "label": "Verified fees",
+      "type": "currency",
+      "required": true,
+      "minimum": 0
+    },
+    {
+      "key": "method",
+      "label": "Calculation method",
+      "type": "select",
+      "required": true,
+      "options": [
+        "Simple ACT/365"
+      ]
+    }
+  ],
+  "description": "Assemble source-backed facts, a calculation worksheet and illustrative drafts for lawyer review.",
+  "adapter": "mortgage",
+  "version": 1
+}

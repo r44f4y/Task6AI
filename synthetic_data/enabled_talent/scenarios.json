@@ -1,0 +1,175 @@
+[
+  {
+    "id": "enabled_talent-001",
+    "org": "enabled_talent",
+    "title": "Low vision in customer support",
+    "sender": "demo-enabled-talent@example.com",
+    "channel": "Form",
+    "body": "Fictional pre-hire accessibility intake.\n\nCandidate alias: Candidate Demo 1\nJob role: Customer support associate\nJob duties: Use the employer portal, attend team onboarding and communicate with coworkers\nCandidate-stated adjustments: Low vision. Screen magnification, keyboard navigation and large-print materials requested.\nEmployer accessibility provisions: Accessibility lead available; assistive technology and setup must be confirmed with IT\n\nThanks for checking.\n",
+    "thread": "enabled_talent-001",
+    "message_id": "enabled_talent-001@example.com",
+    "timestamp": "2026-11-21T14:01:00Z",
+    "expected": {
+      "candidate": "Candidate Demo 1",
+      "role": "Customer support associate",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Low vision. Screen magnification, keyboard navigation and large-print materials requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "candidate": "Candidate Demo 1",
+      "role": "Customer support associate",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Low vision. Screen magnification, keyboard navigation and large-print materials requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  },
+  {
+    "id": "enabled_talent-002",
+    "org": "enabled_talent",
+    "title": "Missing employer provisions",
+    "sender": "demo-enabled-talent@example.com",
+    "channel": "Form",
+    "body": "Fictional pre-hire accessibility intake.\n\nCandidate alias: Candidate Demo 2\nJob role: Customer support associate\nJob duties: Use the employer portal, attend team onboarding and communicate with coworkers\nCandidate-stated adjustments: Larger display text and accessible training materials requested.\n\nThanks for checking.\n",
+    "thread": "enabled_talent-002",
+    "message_id": "enabled_talent-002@example.com",
+    "timestamp": "2026-11-21T14:02:00Z",
+    "expected": {
+      "candidate": "Candidate Demo 2",
+      "role": "Customer support associate",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Larger display text and accessible training materials requested."
+    },
+    "missing": [
+      "provisions"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide employer accessibility provisions."
+    ],
+    "replies": [],
+    "final": {
+      "candidate": "Candidate Demo 2",
+      "role": "Customer support associate",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Larger display text and accessible training materials requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  },
+  {
+    "id": "enabled_talent-003",
+    "org": "enabled_talent",
+    "title": "Inventory onboarding",
+    "sender": "demo-enabled-talent@example.com",
+    "channel": "Form",
+    "body": "Fictional pre-hire accessibility intake.\n\nCandidate alias: Candidate Demo 3\nJob role: Inventory clerk\nJob duties: Use the employer portal, attend team onboarding and communicate with coworkers\nCandidate-stated adjustments: Written instructions and visual notifications requested.\nEmployer accessibility provisions: Accessibility lead available; assistive technology and setup must be confirmed with IT\n\nThanks for checking.\n",
+    "thread": "enabled_talent-003",
+    "message_id": "enabled_talent-003@example.com",
+    "timestamp": "2026-11-21T14:03:00Z",
+    "expected": {
+      "candidate": "Candidate Demo 3",
+      "role": "Inventory clerk",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Written instructions and visual notifications requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "candidate": "Candidate Demo 3",
+      "role": "Inventory clerk",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Written instructions and visual notifications requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  },
+  {
+    "id": "enabled_talent-004",
+    "org": "enabled_talent",
+    "title": "Accessible meetings",
+    "sender": "demo-enabled-talent@example.com",
+    "channel": "Form",
+    "body": "Fictional pre-hire accessibility intake.\n\nCandidate alias: Candidate Demo 4\nJob role: Program coordinator\nJob duties: Use the employer portal, attend team onboarding and communicate with coworkers\nCandidate-stated adjustments: Live captions and written meeting summaries requested.\nEmployer accessibility provisions: Accessibility lead available; assistive technology and setup must be confirmed with IT\n\nThanks for checking.\n",
+    "thread": "enabled_talent-004",
+    "message_id": "enabled_talent-004@example.com",
+    "timestamp": "2026-11-21T14:04:00Z",
+    "expected": {
+      "candidate": "Candidate Demo 4",
+      "role": "Program coordinator",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Live captions and written meeting summaries requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "candidate": "Candidate Demo 4",
+      "role": "Program coordinator",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Live captions and written meeting summaries requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  },
+  {
+    "id": "enabled_talent-005",
+    "org": "enabled_talent",
+    "title": "Adjustable workstation",
+    "sender": "demo-enabled-talent@example.com",
+    "channel": "Form",
+    "body": "Fictional pre-hire accessibility intake.\n\nCandidate alias: Candidate Demo 5\nJob role: Library assistant\nJob duties: Use the employer portal, attend team onboarding and communicate with coworkers\nCandidate-stated adjustments: Adjustable workstation and scheduled breaks requested.\nEmployer accessibility provisions: Accessibility lead available; assistive technology and setup must be confirmed with IT\n\nThanks for checking.\n",
+    "thread": "enabled_talent-005",
+    "message_id": "enabled_talent-005@example.com",
+    "timestamp": "2026-11-21T14:05:00Z",
+    "expected": {
+      "candidate": "Candidate Demo 5",
+      "role": "Library assistant",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Adjustable workstation and scheduled breaks requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "candidate": "Candidate Demo 5",
+      "role": "Library assistant",
+      "duties": "Use the employer portal, attend team onboarding and communicate with coworkers",
+      "needs": "Adjustable workstation and scheduled breaks requested.",
+      "provisions": "Accessibility lead available; assistive technology and setup must be confirmed with IT"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  }
+]

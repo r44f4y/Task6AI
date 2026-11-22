@@ -1,0 +1,599 @@
+[
+  {
+    "id": "grandieu-001",
+    "org": "grandieu",
+    "title": "Flyer sizes and pricing",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! What flyer sizes, file formats and prices are available? I haven’t selected a size yet.\n\nCustomer: Fictional Arts Collective 01\nRequested service: Flyer printing\nFlyer quantity: 100\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-001",
+    "message_id": "grandieu-001@example.com",
+    "timestamp": "2026-11-21T14:01:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 01",
+      "service": "Flyer printing",
+      "quantity": 100,
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-1.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [
+      "size"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide flyer size."
+    ],
+    "replies": [
+      "Flyer size: A5"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 01",
+      "service": "Flyer printing",
+      "quantity": 100,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-1.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-1.png",
+        "kind": "png",
+        "width_mm": 148,
+        "height_mm": 210,
+        "dpi": 300,
+        "text": "Design file: event-1.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-002",
+    "org": "grandieu",
+    "title": "Missing flyer quantity",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 02\nRequested service: Flyer printing\nFlyer size: A6\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-002",
+    "message_id": "grandieu-002@example.com",
+    "timestamp": "2026-11-21T14:02:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 02",
+      "service": "Flyer printing",
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-2.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [
+      "quantity"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide flyer quantity."
+    ],
+    "replies": [
+      "Flyer quantity: 200"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 02",
+      "service": "Flyer printing",
+      "quantity": 200,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-2.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-2.png",
+        "kind": "png",
+        "width_mm": 105,
+        "height_mm": 148,
+        "dpi": 300,
+        "text": "Design file: event-2.png\nFile format: PNG\nDesign width in mm: 105\nDesign height in mm: 148\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-003",
+    "org": "grandieu",
+    "title": "Missing design file",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 03\nRequested service: Flyer printing\nFlyer quantity: 300\nFlyer size: A5\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-003",
+    "message_id": "grandieu-003@example.com",
+    "timestamp": "2026-11-21T14:03:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 03",
+      "service": "Flyer printing",
+      "quantity": 300,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "due": "2026-12-10"
+    },
+    "missing": [
+      "design",
+      "format",
+      "design_width",
+      "design_height",
+      "resolution"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide design file.",
+      "Provide file format.",
+      "Provide design width in mm.",
+      "Provide design height in mm.",
+      "Provide design resolution in dpi."
+    ],
+    "replies": [
+      "Design file: event-3.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 03",
+      "service": "Flyer printing",
+      "quantity": 300,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-3.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [],
+    "reply_attachments": {
+      "1": [
+        {
+          "name": "event-3.png",
+          "kind": "png",
+          "width_mm": 148,
+          "height_mm": 210,
+          "dpi": 300,
+          "text": "Design file: event-3.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+        }
+      ]
+    }
+  },
+  {
+    "id": "grandieu-004",
+    "org": "grandieu",
+    "title": "Unsupported design format",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 04\nRequested service: Flyer printing\nFlyer quantity: 400\nFlyer size: A6\nPrint colour: Full colour\nSides: Double-sided\nDesign file: poster.svg\nFile format: SVG\nDesign width in mm: 105\nDesign height in mm: 148\nDesign resolution in DPI: 300\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-004",
+    "message_id": "grandieu-004@example.com",
+    "timestamp": "2026-11-21T14:04:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 04",
+      "service": "Flyer printing",
+      "quantity": 400,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "poster.svg",
+      "format": "SVG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "customer": "Fictional Arts Collective 04",
+      "service": "Flyer printing",
+      "quantity": 400,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "poster.svg",
+      "format": "SVG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-005",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 05\nRequested service: Flyer printing\nFlyer quantity: 500\nFlyer size: A5\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-005",
+    "message_id": "grandieu-005@example.com",
+    "timestamp": "2026-11-21T14:05:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 05",
+      "service": "Flyer printing",
+      "quantity": 500,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-5.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "customer": "Fictional Arts Collective 05",
+      "service": "Flyer printing",
+      "quantity": 500,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-5.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-5.png",
+        "kind": "png",
+        "width_mm": 148,
+        "height_mm": 210,
+        "dpi": 300,
+        "text": "Design file: event-5.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-006",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 06\nRequested service: Flyer printing\nFlyer quantity: 600\nFlyer size: A6\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-006",
+    "message_id": "grandieu-006@example.com",
+    "timestamp": "2026-11-21T14:06:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 06",
+      "service": "Flyer printing",
+      "quantity": 600,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-6.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "customer": "Fictional Arts Collective 06",
+      "service": "Flyer printing",
+      "quantity": 600,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-6.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-6.png",
+        "kind": "png",
+        "width_mm": 105,
+        "height_mm": 148,
+        "dpi": 300,
+        "text": "Design file: event-6.png\nFile format: PNG\nDesign width in mm: 105\nDesign height in mm: 148\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-007",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 07\nRequested service: Flyer printing\nFlyer quantity: 700\nFlyer size: A5\nPrint colour: Full colour\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-007",
+    "message_id": "grandieu-007@example.com",
+    "timestamp": "2026-11-21T14:07:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 07",
+      "service": "Flyer printing",
+      "quantity": 700,
+      "size": "A5",
+      "colour": "Full colour",
+      "design": "event-7.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [
+      "sides"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide sides."
+    ],
+    "replies": [
+      "Sides: Double-sided"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 07",
+      "service": "Flyer printing",
+      "quantity": 700,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-7.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-7.png",
+        "kind": "png",
+        "width_mm": 148,
+        "height_mm": 210,
+        "dpi": 300,
+        "text": "Design file: event-7.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-008",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 08\nRequested service: Flyer printing\nFlyer quantity: 800\nFlyer size: A6\nPrint colour: Full colour\nSides: Double-sided\n\nThanks for checking.\n",
+    "thread": "grandieu-008",
+    "message_id": "grandieu-008@example.com",
+    "timestamp": "2026-11-21T14:08:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 08",
+      "service": "Flyer printing",
+      "quantity": 800,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-8.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300
+    },
+    "missing": [
+      "due"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide completion date."
+    ],
+    "replies": [
+      "Completion date: 2026-12-10"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 08",
+      "service": "Flyer printing",
+      "quantity": 800,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-8.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-8.png",
+        "kind": "png",
+        "width_mm": 105,
+        "height_mm": 148,
+        "dpi": 300,
+        "text": "Design file: event-8.png\nFile format: PNG\nDesign width in mm: 105\nDesign height in mm: 148\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-009",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 09\nRequested service: Flyer printing\nFlyer quantity: 900\nFlyer size: A5\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-009",
+    "message_id": "grandieu-009@example.com",
+    "timestamp": "2026-11-21T14:09:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 09",
+      "service": "Flyer printing",
+      "quantity": 900,
+      "size": "A5",
+      "sides": "Double-sided",
+      "design": "event-9.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [
+      "colour"
+    ],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [
+      "Provide print colour."
+    ],
+    "replies": [
+      "Print colour: Full colour"
+    ],
+    "final": {
+      "customer": "Fictional Arts Collective 09",
+      "service": "Flyer printing",
+      "quantity": 900,
+      "size": "A5",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-9.png",
+      "format": "PNG",
+      "design_width": 148,
+      "design_height": 210,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-9.png",
+        "kind": "png",
+        "width_mm": 148,
+        "height_mm": 210,
+        "dpi": 300,
+        "text": "Design file: event-9.png\nFile format: PNG\nDesign width in mm: 148\nDesign height in mm: 210\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  },
+  {
+    "id": "grandieu-010",
+    "org": "grandieu",
+    "title": "Complete flyer order",
+    "sender": "demo-grandieu@example.com",
+    "channel": "WhatsApp",
+    "body": "Hi! Please print flyers for our fictional event.\n\nCustomer: Fictional Arts Collective 10\nRequested service: Flyer printing\nFlyer quantity: 1000\nFlyer size: A6\nPrint colour: Full colour\nSides: Double-sided\nCompletion date: 2026-12-10\n\nThanks for checking.\n",
+    "thread": "grandieu-010",
+    "message_id": "grandieu-010@example.com",
+    "timestamp": "2026-11-21T14:10:00Z",
+    "expected": {
+      "customer": "Fictional Arts Collective 10",
+      "service": "Flyer printing",
+      "quantity": 1000,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-10.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "customer": "Fictional Arts Collective 10",
+      "service": "Flyer printing",
+      "quantity": 1000,
+      "size": "A6",
+      "colour": "Full colour",
+      "sides": "Double-sided",
+      "design": "event-10.png",
+      "format": "PNG",
+      "design_width": 105,
+      "design_height": 148,
+      "resolution": 300,
+      "due": "2026-12-10"
+    },
+    "attachments": [
+      {
+        "name": "event-10.png",
+        "kind": "png",
+        "width_mm": 105,
+        "height_mm": 148,
+        "dpi": 300,
+        "text": "Design file: event-10.png\nFile format: PNG\nDesign width in mm: 105\nDesign height in mm: 148\nDesign resolution in DPI: 300"
+      }
+    ],
+    "reply_attachments": {}
+  }
+]

@@ -1,0 +1,9 @@
+ILLUSTRATIVE DRAFT | LAWYER REVIEW
+Demand Letter
+
+File parties: {lender} and {borrower}
+Property: {property}
+Mortgage registration: {registration}
+Ledger as of {as_of}: CAD {total}
+
+This specimen records the independently reviewable ledger figure. Counsel must supply and approve the demand terms before any use.

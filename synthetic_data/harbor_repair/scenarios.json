@@ -1,0 +1,38 @@
+[
+  {
+    "id": "harbor_repair-001",
+    "org": "harbor_repair",
+    "title": "Configuration-only equipment workflow",
+    "sender": "demo-harbor-repair@example.com",
+    "channel": "Email",
+    "body": "Equipment ID: DEMO-PUMP-42\nReported fault: Pump loses pressure\nRequested service date: 2026-12-02\nContact email: maintenance@example.com\nOn-site visit: Yes\nVisit address: 42 Fictional Harbour Road, Exampleton, ON\n\nThanks for checking.\n",
+    "thread": "harbor_repair-001",
+    "message_id": "harbor_repair-001@example.com",
+    "timestamp": "2026-11-21T14:01:00Z",
+    "expected": {
+      "asset": "DEMO-PUMP-42",
+      "fault": "Pump loses pressure",
+      "requested_date": "2026-12-02",
+      "contact": "maintenance@example.com",
+      "on_site": true,
+      "location": "42 Fictional Harbour Road, Exampleton, ON"
+    },
+    "missing": [],
+    "ambiguous": [],
+    "conflict": null,
+    "unsupported": false,
+    "duplicate": false,
+    "clarification": [],
+    "replies": [],
+    "final": {
+      "asset": "DEMO-PUMP-42",
+      "fault": "Pump loses pressure",
+      "requested_date": "2026-12-02",
+      "contact": "maintenance@example.com",
+      "on_site": true,
+      "location": "42 Fictional Harbour Road, Exampleton, ON"
+    },
+    "attachments": [],
+    "reply_attachments": {}
+  }
+]
