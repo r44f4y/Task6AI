@@ -341,4 +341,4 @@ label>select {width:100%}
 .attachment-preview {display:block;max-height:225px;max-width:100%;width:auto;margin:8px auto;border:1px solid var(--line);border-radius:6px}
 .issue-link {display:block;font-size:.87rem;font-weight:680;text-align:left}
 .issue-link:hover {text-decoration:underline}
-.field-row.focused-field {background:var(--amber-soft);box-shadow:inset 3px 0 currentColor}
+.field-row.focused-field {background:var(--amber-soft);box-shadow:inset 3px 0 var(--amber)}

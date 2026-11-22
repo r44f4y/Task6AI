@@ -8,6 +8,17 @@ export const textValue=(value:Value|undefined)=>value === true ? 'Yes' : value =
 type Props={record:CaseDetail;health:Health|null;back:()=>void;backLabel:string;refresh:()=>Promise<void>;updated:(r:CaseDetail)=>void}
 type Dialog='correction'|'review'|'export'|'staff'|'reply'|null
 
+function revealInPanel(target:Element|null,panelClass:string){
+  if(!target)return
+  const panel=target.closest(panelClass)
+  if(panel && panel.scrollHeight>panel.clientHeight){
+    const offset=target.getBoundingClientRect().top-panel.getBoundingClientRect().top
+    panel.scrollTo({top:Math.max(0,panel.scrollTop+offset-8)})
+  }else{
+    target.scrollIntoView({block:'nearest'})
+  }
+}
+
 export function Workspace({record,health,back,backLabel,refresh,updated}:Props) {
   const [busy,setBusy]=useState('')
   const [error,setError]=useState('')
@@ -80,10 +91,10 @@ export function Workspace({record,health,back,backLabel,refresh,updated}:Props) 
     })
   }
   useEffect(()=>{
-    if(activeSource)document.querySelector('[data-source-id="'+activeSource+'"]')?.scrollIntoView({block:'nearest'})
+    if(activeSource)revealInPanel(document.querySelector('[data-source-id="'+activeSource+'"]'),'.source-list')
   },[activeSource,sourceTab])
   useEffect(()=>{
-    if(activeField&&section==='Fields')document.querySelector('[data-field-key="'+activeField+'"]')?.scrollIntoView({block:'nearest'})
+    if(activeField&&section==='Fields')revealInPanel(document.querySelector('[data-field-key="'+activeField+'"]'),'.field-list')
   },[activeField,section])
   const errorMessage=error||record.processing_error
   return <div className="workspace">
